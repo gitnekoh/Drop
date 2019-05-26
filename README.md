@@ -1,5 +1,5 @@
 # Drop
 TO-DO:
-- impore a bit (i guess)
-- turbodrop
-- config
+- improve a bit (i guess)
+- finish turbodrop
+- better config
