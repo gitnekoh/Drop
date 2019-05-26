@@ -1,0 +1,5 @@
+name: Drop
+version: 1.0
+main: pl.thathard.drop.Drop
+depend:
+  - Core
