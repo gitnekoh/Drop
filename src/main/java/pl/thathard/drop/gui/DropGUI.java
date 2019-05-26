@@ -13,6 +13,7 @@ import pl.thathard.core.util.CC;
 import pl.thathard.core.util.ItemBuilder;
 import pl.thathard.drop.Drop;
 import pl.thathard.drop.player.DropPlayer;
+import pl.thathard.drop.turbo.TurboDrop;
 
 public class DropGUI implements Listener {
 
@@ -88,6 +89,9 @@ public class DropGUI implements Listener {
                 this.drop.getDropConfig().getSecondaryColor() + "(Kliknij aby wlaczyc)"))
         .build();
 
+    if (this.dropPlayer.getTurboDrop() == null) {
+      this.dropPlayer.setTurboDrop(new TurboDrop(false, false, 0, 0));
+    }
     this.turboDrop = new ItemBuilder(Material.DIAMOND_PICKAXE)
         .name(this.drop.getDropConfig().getMainColor() + "&lTurboDrop").lore(
             CC.translate(
