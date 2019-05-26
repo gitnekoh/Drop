@@ -1,5 +1,6 @@
 name: Drop
 version: ${project.version}
+author: nekoh
 main: pl.thathard.drop.Drop
 depend:
   - Core
